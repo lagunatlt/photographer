@@ -574,6 +574,12 @@ section {
   }
 }
 
+@media (max-width: 780px) {
+  .about-content__image::before {
+    bottom: 0px;
+  }
+}
+
 @media (max-width: 640px) {
   .item-slide {
     height: 400px;
@@ -749,6 +755,9 @@ section {
   .contact-form {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+  }
+  .contact-form input {
+    width: 300px;
   }
   .contact-info {
     -ms-flex-preferred-size: auto;
