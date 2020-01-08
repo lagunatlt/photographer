@@ -661,6 +661,9 @@ section {
 }
 
 @media (max-width: 460px) {
+  .header-nav {
+    padding-top: 10px;
+  }
   .header .container {
     display: -webkit-box;
     display: -ms-flexbox;
