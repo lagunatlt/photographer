@@ -2,6 +2,8 @@ $('.slider-foto').slick({
 	dots: true
 });
 
+
+// ------------------
 window.addEventListener("DOMContentLoaded", function () {
 	[].forEach.call(document.querySelectorAll('.tel'), function (input) {
 		var keyCode;
@@ -38,3 +40,5 @@ window.addEventListener("DOMContentLoaded", function () {
 	});
 
 });
+
+// --------------------

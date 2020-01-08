@@ -110,6 +110,8 @@ html
 	max-width: 940px
 section
 	border-top: 1px solid #C4C4C4
+.front-slider
+    border: none
 .content
 	padding: 51px 0 160px
 	&-contact
@@ -225,7 +227,38 @@ section
 #phone
 	margin-bottom: 42px
 
-
+	// ------------------------------
+.portfolio
+	padding: 51px 0 50px
+.card__items
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.card__item
+	width: 300px
+	height: 267px
+	margin-bottom: 50px
+	// border: 1px solid
+	span
+		font-family: Roboto
+		font-style: normal
+		font-weight: normal
+		font-size: 24px
+		line-height: 28px
+		color: #000000
+		opacity: 0.7
+		padding-top: 5px
+.card__item:nth-child(7)
+	width: 100%
+	height: 765px
+	span
+		font-family: Roboto
+		font-style: normal
+		font-weight: normal
+		font-size: 40px
+		line-height: 47px
+		color: #000000
+		opacity: 0.7
 
 
 
@@ -271,3 +304,240 @@ section
 	flex-wrap: wrap
 	&__item
 		width: 250px
+
+@media ( max-width: 1280px )
+	.slick-next
+		right: 15px
+
+	.slick-prev
+		left: 15px
+
+	.slick-dots li button
+		width: 25px
+		height: 25px
+		border-radius: 50%
+
+	.slick-dots 
+		bottom: 3%
+		padding: 0px
+
+@media ( max-width: 1024px )
+	.header__title
+		font-size: 44px
+		padding: 20px 0
+
+	.header-nav
+		font-size: 20px
+		padding-bottom: 15px
+
+	.contact
+		font-size: 20px
+
+	.slick-next
+		width: 56px
+		height: 56px
+		background-size: 56px
+		background-repeat: no-repeat
+
+	.slick-prev
+		width: 56px
+		height: 56px
+		background-size: 56px
+		background-repeat: no-repeat
+
+	.slick-dots
+		left: 12%
+
+
+	.slick-dots li button
+		width: 20px
+		height: 20px
+
+
+	.slick-dots li button
+		border: 2px solid #ffffff
+	
+	.about-content__text
+		font-size: 20px
+
+	.card__item span
+		font-size: 20px
+
+	.card__item:nth-child(7) span
+		font-size: 30px
+
+	.contact-form span
+		font-size: 20px
+	.contact-info
+		font-size: 20px
+	.contact-form input
+		font-size: 20px
+		width: 340px
+	.contact-form button
+		font-size: 20px
+	
+
+@media ( max-width: 800px )
+	.about-content__image
+		padding: 0 35px
+
+	.about-content__image::before
+		bottom: -83px
+		right: -51px
+
+	.about-content__image::after
+		left: -1px
+
+	.card__items
+		justify-content: space-evenly
+
+	.cost-content h1
+		font-size: 26px
+
+	.content
+		padding: 51px 30px 90px
+
+	.cost-content li
+		font-size: 16px
+
+@media ( max-width: 640px )
+	.header__title
+		font-size: 30px
+	.header-nav
+		font-size: 16px
+	.slick-dots li button
+		width: 13px
+		height: 14px
+	.slick-dots li button
+		border: none
+	.slick-next
+		width: 40px
+		height: 40px
+		background-size: 40px
+	.slick-prev
+		width: 40px
+		height: 40px
+		background-size: 40px
+	.contact
+		font-size: 14px
+	.footer-contacts
+		flex-wrap: wrap
+	.social__icon
+		width: 16px
+		padding: 0 4px
+
+	.about-content 
+		justify-content: center
+		flex-wrap: wrap
+		padding: 51px 0 50px
+
+	.about-content__image
+		padding: 0 35px 35px
+
+	.about-content__image::before
+		bottom: -43px
+
+	.about-content__text
+		max-width: 100%
+		line-height: 21px
+		padding: 0 30px
+
+	.about-content__text
+		font-size: 16px
+
+	.contact-form
+		padding-right: 15px
+
+	.contact-info 
+		font-size: 14px
+	.contact-form span
+		font-size: 16px
+
+	.contact-form input
+		font-size: 18px
+
+	.contact-form button
+		font-size: 16px
+
+	.contact-info
+		line-height: 19px
+
+@media ( max-width: 460px )
+	.header .container
+		display: flex
+		align-items: center
+
+	.header__title
+		font-size: 24px
+		width: 330px
+
+	.header-nav 
+		font-size: 14px
+		flex-direction: column
+		align-items: end
+
+	.footer-contacts
+		flex-direction: column
+		width: 49%
+
+	.contact
+		display: flex
+		justify-content: space-between
+	.header__title
+		padding: 4px 0
+
+	.header-nav__item
+		padding-right: 15px
+
+	.container-footer
+		display: flex
+		justify-content: center
+		align-items: center
+
+	.header__title
+		line-height: 30px
+
+	.header
+		margin-bottom: 10px
+	.contact 
+		padding: 8px
+
+	li.header-nav__item:nth-child(4)
+		padding-right: 15px
+
+	.footer-contacts
+		width: 80%
+
+	.contact
+		padding: 7px 72px
+
+	.card__item:nth-child(7)
+		width: 300px
+		height: 100%
+
+	.card__item:nth-child(7) span
+		font-size: 20px
+
+	div.card__item:nth-child(7) img
+		width: 300px
+
+	.content-contact_wrap
+		flex-wrap: wrap
+
+	.contact-info p
+		max-width: 100%
+		padding-top: 30px
+		padding-bottom: 0px
+
+	.contact-form 
+		flex-basis: auto
+
+	.contact-info
+		flex-basis: auto
+
+	.content
+		padding: 51px 30px 50px
+
+	.contact-info
+		width: 100%
+
