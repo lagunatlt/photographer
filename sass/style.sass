@@ -1,0 +1,273 @@
+*
+	margin: 0
+	&:active, &:focus
+		outline: none !important
+	
+
+// -----------
+h1
+	font-size: 36px
+	line-height: 42px
+	font-weight: bold
+	padding-bottom: 27px
+	opacity: 0.8
+html
+	font-family: roboto, sans-serif
+	color: #000000
+.header
+	width: 100%
+	margin-bottom: 30px
+	&__title
+		text-align: center
+		font-weight: bold
+		font-size: 48px
+		line-height: 56px
+		padding: 30px 0
+		a
+			text-decoration: none
+			color: #000000
+	&-nav
+		display: flex
+		justify-content: center
+		list-style: none
+		padding: 0
+		font-size: 24px
+		line-height: 28px
+		padding-bottom: 40px
+		a
+			text-decoration: none
+			color: #000000
+		&__item
+			padding-right: 49px
+			&:last-child
+				padding-right: 0
+			&:hover
+				font-weight: bold
+		&__active
+			font-weight: bold
+.item-slide
+	&__image
+		width: 100%
+.container
+	width: 100%
+	margin: 0 auto
+	// padding-bottom: 25px
+.slick
+	&-next
+		position: absolute
+		width: 85px
+		height: 85px
+		background-color: transparent
+		border: none
+		top: 42%
+		right: 10%
+		z-index: 1
+		background-image: url(../img/next.svg)
+		background-size: 85px
+		&:hover
+			cursor: pointer
+		&:active
+			transform: scale(0.98)
+	&-prev
+		position: absolute
+		width: 85px
+		height: 85px
+		background-color: transparent
+		border: none
+		top: 42%
+		left: 10%
+		z-index: 1
+		background-image: url(../img/prev.svg)
+		background-size: 85px
+		&:hover
+			cursor: pointer
+		&:active
+			transform: scale(0.98)
+	&-dots
+		position: absolute
+		bottom: 6%
+		display: flex
+		list-style: none
+		padding: 0
+		left: 20%
+		li
+			button
+				width: 37px
+				height: 37px
+				border: 3px solid #ffffff
+				border-radius: 18px
+				background-color: #C4C4C4
+				margin: 5px
+				&:hover
+					cursor: pointer
+		.slick
+			&-active
+				button
+					background-color: #92FFFF
+.container
+	&-fluid
+		width: 100%
+	max-width: 940px
+section
+	border-top: 1px solid #C4C4C4
+.content
+	padding: 51px 0 160px
+	&-contact
+		&_wrap
+			display: flex
+.about
+	&-content
+		display: flex
+		justify-content: space-between
+		padding: 71px 0 160px
+		&__img
+			width: 297px
+		&__image
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				width: 78px
+				height: 78px
+				top: -38px
+				left: -38px
+				background-color: #92FFFF
+				z-index: -1
+				border-radius: 38px
+			&::before
+				content: ''
+				position: absolute
+				width: 176px
+				height: 176px
+				bottom: -76px
+				right: -89px
+				background-color: #92FFFF
+				z-index: -1
+				border-radius: 88px
+		&__text
+			max-width: 540px
+			font-size: 24px
+			line-height: 28px
+			opacity: 0.9
+		p
+			padding-bottom: 27px
+.cost
+	&-content
+		ul
+			max-width: 660px
+		li
+			font-size: 24px
+			font-family: 'Roboto'
+			line-height: 28px
+			color: #000000
+			opacity: 0.9
+	&-cost
+		list-style: none
+		padding: 20px 0 0 17px
+		li
+			&:first-child
+				font-weight: bold
+.contact
+	&-form
+		flex-basis: 200px
+		display: flex
+		flex-direction: column
+		padding-right: 80px
+		span
+			font-size: 24px
+			line-height: 28px
+			color: #000000
+			opacity: 0.5
+			padding-bottom: 5px
+		input
+			display: block
+			// max-width: 300px
+			padding: 10px 15px 11px 15px
+			margin-bottom: 18px
+			border: 1px solid #DADADA
+			border-radius: 15px
+			font-size: 24px
+			font-family: 'Roboto'
+			background: rgba(153, 224, 246, 0.1)
+			color: #686868
+			box-sizing: border-box
+			text-overflow: ellipsis
+		button
+			display: block
+			width: 224px
+			padding: 10px 0 11px 0
+			align-self: center
+			border: none
+			border-radius: 15px
+			font-size: 24px
+			font-family: 'Roboto'
+			background: #99E0F7
+			cursor: pointer
+			transition: all 0.2s ease-in-out;
+			&:hover
+				transition: all 0.2s ease-in-out;
+				box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+			&:active
+				transform: scale(0.98)
+				transition: all 0.05s ease-in-out;
+	&-info
+		flex-basis: 60%
+		font-family: 'Roboto'
+		font-size: 24px
+		line-height: 28px
+		color: #000000
+		opacity: 0.8
+		p
+			max-width: 460px
+			padding-top: 15px
+			padding-bottom: 31px
+
+#phone
+	margin-bottom: 42px
+
+
+
+
+
+
+.footer
+	&-contacts
+		display: flex
+		justify-content: center
+		&__border
+			border-top: 2px solid #C4C4C4
+.contact
+	padding: 36px
+	// border: 1px solid #000
+	text-align: center
+	font-family: Roboto Light
+	font-size: 24px
+  line-height: 32px
+	opacity: 0.7
+	&:hover
+		user-select: none
+		opacity: 1
+	&__title
+		font-family: Roboto Medium
+	& a
+		text-decoration: none
+		color: #000000
+	&-info
+		a
+			text-decoration: none
+			color: #000000
+.social
+	&__icon
+		width: 22px
+		padding: 0 8px
+		transition: all 0.2s ease-in-out;
+		&:hover
+			transition: all 0.2s ease-in-out;
+			transform: scale(1.1)
+.contact p
+	padding-bottom: 10px
+.slider
+	display: flex
+	flex-wrap: wrap
+	&__item
+		width: 250px
