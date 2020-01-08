@@ -46,8 +46,13 @@ html
 		&__active
 			font-weight: bold
 .item-slide
-	&__image
-		width: 100%
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	width: 100%
+	height: 790px
+	// &__image
+	// 	width: 100%
 .container
 	width: 100%
 	margin: 0 auto
@@ -306,6 +311,9 @@ section
 		width: 250px
 
 @media ( max-width: 1280px )
+	.item-slide
+		height: 600px
+
 	.slick-next
 		right: 15px
 
@@ -322,6 +330,8 @@ section
 		padding: 0px
 
 @media ( max-width: 1024px )
+	.item-slide
+		height: 500px
 	.header__title
 		font-size: 44px
 		padding: 20px 0
@@ -401,6 +411,8 @@ section
 		font-size: 16px
 
 @media ( max-width: 640px )
+	.item-slide
+    height: 400px
 	.header__title
 		font-size: 30px
 	.header-nav
@@ -541,3 +553,7 @@ section
 	.contact-info
 		width: 100%
 
+	.slick-next
+		right: 0px
+	.slick-prev
+		left: 0px
